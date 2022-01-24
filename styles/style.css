@@ -13,7 +13,20 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  position: relative;
   /* выше установили ограничения для секции */
+}
+
+.logo {
+  background-image: url(/images/logo_place_header.svg);
+}
+
+.logo_place_header {
+  width: 183px;
+  height: 32px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -29,3 +42,4 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
