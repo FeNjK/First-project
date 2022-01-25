@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-div h1 {
+div, h1, h2, p, img, header, main, footer {
   border: 1px solid red;
 }
 
@@ -23,36 +23,68 @@ div h1 {
   min-height: 600px;
   max-height: 756px;
   display: flex;
+  background-color: #f2f2f2;
   position: relative;
-  
 }
 
-.logo {
-  width: 183px;
-  height: 32px;
-}
-
-.logo_place_header {
-  
+.logo { /* с этим селектором надо будет потом что-нибудь сделать */
   top: 30px;
   left: 64px;
-  background-image: url(./images/logo_place_header.svg);
+}
+
+.logo_place_header { 
+  /* в этом месте какая-то ерунда с рамкой  которой быть не должно */
+  width: 183px;
+  height: 32px;
+  top: 30px;
+  left: 64px;
+  background-image:url(../images/logo_place_header.svg);
   position: absolute;
+  z-index: 4;
 }
 
 .title {
-  display: flex;
+  display: flex;  
   width: 730px;
   line-height: 96px;
   font-size: 102px;
-  align-items: center;
+  align-self: center;
   margin-left: 64px;
+  z-index: 3;
+}
+
+.subtitle {
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  position: absolute;
+  z-index: 2;
+}
+
+.subtitle__link {
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  top: 30px;
+  right: 0px;
+  background-color: #2f80ed;
+  position: absolute;
+  z-index: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -63,9 +95,32 @@ div h1 {
   margin-top: 80px;
 }
 
+.footer {
+  min-height: 350px;
+  max-height: 756px;
+  display: flex;
+  background-color: #000000;
+  position: relative;
+}
+
+.footer_columns {
+  flex-direction: row
+}
+
+.footer_columns_copyright {
+  width: 90%;
+}
+  
+
 .logo_place_footer {
-  top: 30px;
-  left: 64px;
-  background-image: url(./images/logo_place_footer.svg);
+  width: 183px;
+  height: 35px;
+  background-image:url(../images/logo_place_footer.svg);
   position: absolute;
+  align-items: flex-start;
+}
+.author {
+  line-height: 25px;
+  font-size: 18px;
+  color:white
 }
