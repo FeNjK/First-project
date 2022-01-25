@@ -27,21 +27,72 @@ div, h1, h2, p, img, header, main, footer {
   position: relative;
 }
 
-.logo { /* с этим селектором надо будет потом что-нибудь сделать */
-  top: 30px;
-  left: 64px;
+.logo { 
+  width: 183px;
 }
 
 .logo_place_header { 
-  /* в этом месте какая-то ерунда с рамкой  которой быть не должно */
-  width: 183px;
   height: 32px;
   top: 30px;
   left: 64px;
-  background-image:url(../images/logo_place_header.svg);
+  background-size: cover;
   position: absolute;
   z-index: 4;
 }
+
+/* Большой вопрос пригодится ли это всё
+
+.useful-info_font-size_xxxl {
+  font-size: 120px;
+}
+
+.useful-info_font-size_xxl {
+  font-size: 102px;
+}
+
+.useful-info_font-size_xl {
+  font-size: 60px;
+}
+
+.useful-info_font-size_l {
+  font-size: 36px;
+}
+
+.useful-info_font-size_m {
+  font-size: 24px;
+}
+
+.useful-info_font-size_s {
+  font-size: 18px;
+}
+
+.useful-info_line-height_xxxxl {
+  line-height: 1.2;
+}
+
+.useful-info_line-height_xxxl {
+  line-height: 1.15;
+}
+
+.useful-info_line-height_xxl {
+  line-height: 96px;
+}
+
+.useful-info_line-height_xl {
+  line-height: 51px;
+}
+
+.useful-info_line-height_l {
+  line-height: 34px;
+}
+
+.useful-info_line-height_m {
+  line-height: 30px;
+}
+
+.useful-info_line-height_s {
+  line-height: 25px;
+}*/
 
 .title {
   display: flex;  
@@ -87,6 +138,24 @@ div, h1, h2, p, img, header, main, footer {
   z-index: 0;
 }
 
+.description {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.two-columns {
+
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
@@ -113,12 +182,11 @@ div, h1, h2, p, img, header, main, footer {
   
 
 .logo_place_footer {
-  width: 183px;
   height: 35px;
-  background-image:url(../images/logo_place_footer.svg);
   position: absolute;
   align-items: flex-start;
 }
+
 .author {
   line-height: 25px;
   font-size: 18px;
