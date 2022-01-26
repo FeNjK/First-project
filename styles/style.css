@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 div, h1, h2, p, img, header, main, footer {
   border: 1px solid red;
 }
@@ -16,9 +11,10 @@ div, h1, h2, p, img, header, main, footer {
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding: 0;
 }
 
-.header { /* ниже установлены ограничения для секции */
+.header { /* в этом селекторе установлены ограничения для секции */
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -39,60 +35,6 @@ div, h1, h2, p, img, header, main, footer {
   position: absolute;
   z-index: 4;
 }
-
-/* Большой вопрос пригодится ли это всё
-
-.useful-info_font-size_xxxl {
-  font-size: 120px;
-}
-
-.useful-info_font-size_xxl {
-  font-size: 102px;
-}
-
-.useful-info_font-size_xl {
-  font-size: 60px;
-}
-
-.useful-info_font-size_l {
-  font-size: 36px;
-}
-
-.useful-info_font-size_m {
-  font-size: 24px;
-}
-
-.useful-info_font-size_s {
-  font-size: 18px;
-}
-
-.useful-info_line-height_xxxxl {
-  line-height: 1.2;
-}
-
-.useful-info_line-height_xxxl {
-  line-height: 1.15;
-}
-
-.useful-info_line-height_xxl {
-  line-height: 96px;
-}
-
-.useful-info_line-height_xl {
-  line-height: 51px;
-}
-
-.useful-info_line-height_l {
-  line-height: 34px;
-}
-
-.useful-info_line-height_m {
-  line-height: 30px;
-}
-
-.useful-info_line-height_s {
-  line-height: 25px;
-}*/
 
 .title {
   display: flex;  
@@ -127,7 +69,6 @@ div, h1, h2, p, img, header, main, footer {
   z-index: 1;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -138,25 +79,66 @@ div, h1, h2, p, img, header, main, footer {
   z-index: 0;
 }
 
+/* начало секции "description" */
 .description {
   display: flex;
   justify-content: center;
-  width: 80%;
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
-.two-columns {
-
-}
-
-.flex-row {
+.description__two-columns {
   display: flex;
+  width: 80%;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+.two-columns__brief {
+  width: 175px;
+  align-items: flex-start;
+}
+
+.two-columns__brief-content {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  height: 100%;
+  margin-block-start: 0;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  }
+
+  .two-columns__paragraph { 
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;  
+  }
+
+  .two-columns__paragraph_first-last { 
+  margin-top: 0px;
+  margin-bottom: 0px;  
+}
+
+.two-columns__paragraph_average { 
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+.two-columns__span-accent {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+} /* конец секции "description" */
+
+/* в этом селекторе установлены ограничения для элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -164,7 +146,8 @@ div, h1, h2, p, img, header, main, footer {
   margin-top: 80px;
 }
 
-.footer {
+/* начало "подвала" сайта */
+.footer { 
   min-height: 350px;
   max-height: 756px;
   display: flex;
@@ -180,7 +163,6 @@ div, h1, h2, p, img, header, main, footer {
   width: 90%;
 }
   
-
 .logo_place_footer {
   height: 35px;
   position: absolute;
