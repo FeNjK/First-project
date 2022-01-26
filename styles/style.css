@@ -1,4 +1,4 @@
-div, h1, h2, p, img, header, main, footer {
+div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, footer {
   border: 1px solid red;
 }
 
@@ -31,7 +31,6 @@ div, h1, h2, p, img, header, main, footer {
   height: 32px;
   top: 30px;
   left: 64px;
-  background-size: cover;
   position: absolute;
   z-index: 4;
 }
@@ -66,6 +65,7 @@ div, h1, h2, p, img, header, main, footer {
   bottom: 0;
   right: 0;
   position: absolute;
+  background-size: cover;
   z-index: 1;
 }
 
@@ -76,6 +76,7 @@ div, h1, h2, p, img, header, main, footer {
   right: 0px;
   background-color: #2f80ed;
   position: absolute;
+  background-size: cover;
   z-index: 0;
 }
 
@@ -121,7 +122,7 @@ div, h1, h2, p, img, header, main, footer {
   font-weight: normal;
 }
 
-  .two-columns__paragraph_first-last { 
+.two-columns__paragraph_first-last { 
   margin-top: 0px;
   margin-bottom: 0px;  
 }
@@ -148,31 +149,80 @@ div, h1, h2, p, img, header, main, footer {
   min-height: 350px;
   max-height: 756px;
   display: flex;
+}
+
+.background_dark {
   background-color: #000000;
-  position: relative;
 }
 
-.footer_columns {
-  margin-top: 60px;
-  margin-bottom: 40px;
-  margin: auto;
-  flex-direction: row
-}
-
-.footer_columns_copyright {
+.footer__columns {
   width: 90%;
+  display: flex;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-bottom: 40px;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
   flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
   
 .logo_place_footer {
   height: 35px;
-  position: absolute;
-  align-items: flex-start;
-  z-index: 4;
 }
 
-.author {
+.footer__author {
   line-height: 25px;
   font-size: 18px;
-  color:white
+  font-weight: normal;
+  color:white;
+  margin-top: 18px;
+  margin-bottom: 18px; 
+}
+
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color:white;
+  margin-top: 0;
+  margin-bottom: 20px; 
+}
+
+.footer__column-links {
+  list-style: none;
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-left: 0px;
+}
+
+.footer__column-link {
+  list-style: none;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color:white;
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer__column_content_social {
+
+}
+
+.footer__social_icon {
+    
 }
