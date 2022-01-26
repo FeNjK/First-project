@@ -209,8 +209,6 @@ div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, footer {
 }
 
 .footer__column-link {
-  list-style: none;
-  text-decoration: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -220,9 +218,12 @@ div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, footer {
 }
 
 .footer__column_content_social {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__social_icon {
-    
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
