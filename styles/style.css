@@ -11,7 +11,7 @@ div, h1, h2, p, img, header, main, footer {
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  padding: 0;
+  
 }
 
 .header { /* в этом селекторе установлены ограничения для секции */
@@ -113,15 +113,13 @@ div, h1, h2, p, img, header, main, footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  }
+}
 
-  .two-columns__paragraph { 
-    line-height: 34px;
-    font-size: 24px;
-    font-weight: normal;
-    margin-top: 0px;
-    margin-bottom: 0px;  
-  }
+.two-columns__paragraph { 
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
 
   .two-columns__paragraph_first-last { 
   margin-top: 0px;
@@ -131,10 +129,9 @@ div, h1, h2, p, img, header, main, footer {
 .two-columns__paragraph_average { 
   margin-top: 30px;
   margin-bottom: 30px;
+}
 
 .two-columns__span-accent {
-  margin-top: 30px;
-  margin-bottom: 30px;
   font-weight: bold;
 } /* конец секции "description" */
 
@@ -156,17 +153,22 @@ div, h1, h2, p, img, header, main, footer {
 }
 
 .footer_columns {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  margin: auto;
   flex-direction: row
 }
 
 .footer_columns_copyright {
   width: 90%;
+  flex-basis: 711px;
 }
   
 .logo_place_footer {
   height: 35px;
   position: absolute;
   align-items: flex-start;
+  z-index: 4;
 }
 
 .author {
