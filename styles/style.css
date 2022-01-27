@@ -42,6 +42,7 @@ div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, section, footer {
   width: 730px;
   line-height: 96px;
   font-size: 102px;
+  font-weight: bold;
   align-self: center;
   margin-left: 64px;
   z-index: 3;
@@ -53,6 +54,7 @@ div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, section, footer {
   width: 388px;
   line-height: 25px;
   font-size: 18px;
+  font-weight: normal;
   position: absolute;
   z-index: 2;
 }
@@ -82,8 +84,7 @@ div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, section, footer {
   z-index: 0;
 }
 
-/* начало секции "description" */
-.description {
+.description { /* начало секции "description" */
   display: flex;
   justify-content: center;
   margin-top: 100px;
@@ -137,8 +138,7 @@ div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, section, footer {
   font-weight: bold;
 }
 
-/* начало секции "digits" */
-.digits {
+.digits { /* начало секции "digits" */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -193,8 +193,54 @@ div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, section, footer {
   margin: 20px auto 0;
 }
 
-/* начало секции "kaufman" */
-.kaufman {
+.feynman { /* начало секции "feynman" */
+  height: 890px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.feynman__title {
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  align-self: center;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  z-index: 3;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.feynman__link {
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.feynman__illustration {
+  width: 867px;
+  height: 637px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-size: cover;
+  z-index: 0;
+}
+
+.kaufman { /* начало секции "kaufman" */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -211,24 +257,24 @@ div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, section, footer {
   height: 877px;
   width: 877px;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: 0;
   right: -210px;
 }
 
 .section-title_theme_dark {
   color: white;
-  z-index: 2;
+  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
   color: white;
-  z-index: 2;
+  z-index: 1;
 }
 
 .table_theme_dark {
   margin-bottom: 80px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .table__cell_theme_dark {
@@ -236,11 +282,10 @@ div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, section, footer {
   color: white;
   margin-right: 0;
   margin-top: 80px;
-  z-index: 2;
+  z-index: 1;
 }
 
-/* начало "подвала" сайта */
-.footer { 
+.footer { /* начало "подвала" сайта */
   min-height: 350px;
   max-height: 756px;
   display: flex;
