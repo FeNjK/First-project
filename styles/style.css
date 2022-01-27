@@ -11,7 +11,6 @@ div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, section, footer {
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  
 }
 
 .header { /* в этом селекторе установлены ограничения для секции */
@@ -195,23 +194,41 @@ div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, section, footer {
 }
 
 /* начало секции "kaufman" */
-
 .kaufman {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-top: 80px;
+  position: relative;
+  overflow: hidden;
 }
+
+.background_dark {
+  background-color: #000000;
+}
+
+.kaufman_triangl {
+  height: 877px;
+  width: 877px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: -210px;
+}
+
 .section-title_theme_dark {
   color: white;
+  z-index: 2;
 }
 
 .section-subtitle_theme_dark {
   color: white;
+  z-index: 2;
 }
 
 .table_theme_dark {
   margin-bottom: 80px;
+  z-index: 2;
 }
 
 .table__cell_theme_dark {
@@ -219,6 +236,7 @@ div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, section, footer {
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  z-index: 2;
 }
 
 /* начало "подвала" сайта */
@@ -226,10 +244,6 @@ div, h1, h2, h3, h4, h5, h6, p, ul, li, img, header, main, section, footer {
   min-height: 350px;
   max-height: 756px;
   display: flex;
-}
-
-.background_dark {
-  background-color: #000000;
 }
 
 .footer__columns {
