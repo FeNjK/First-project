@@ -172,6 +172,7 @@ body, header, footer, section, div, h1, h2, h3, p, a, link, ul, li, img, article
 }
 
 .table__cell {
+  list-style: none;
   width: 250px;
   margin-right: 0;
   margin-top: 60px;
@@ -242,15 +243,12 @@ body, header, footer, section, div, h1, h2, h3, p, a, link, ul, li, img, article
 
 .kaufman { /* начало секции "kaufman" */
   display: flex;
+  background-color: #000000;
   justify-content: center;
   flex-direction: column;
   padding-top: 80px;
   position: relative;
   overflow: hidden;
-}
-
-.background_dark {
-  background-color: #000000;
 }
 
 .section-title_theme_dark {
@@ -276,7 +274,7 @@ body, header, footer, section, div, h1, h2, h3, p, a, link, ul, li, img, article
   z-index: 1;
 }
 
-.kaufman_triangl {
+.kaufman_triangle {
   height: 877px;
   width: 877px;
   position: absolute;
@@ -286,6 +284,7 @@ body, header, footer, section, div, h1, h2, h3, p, a, link, ul, li, img, article
 }
 
 .footer { /* начало "подвала" сайта */
+  background-color: #000000;
   min-height: 350px;
   max-height: 756px;
   display: flex;
