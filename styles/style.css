@@ -14,11 +14,8 @@
   max-height: 756px;
   display: flex;
   position: relative;
-  overflow: hidden;
-}
-
-.background_grey {
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .logo {
@@ -191,6 +188,7 @@
 
 .feynman { /* начало секции "feynman" */
   height: 890px;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   text-align: center;
