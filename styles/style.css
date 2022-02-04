@@ -9,10 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-body, header, footer, section, nav, div, h1, h2, h3, p, a, link, ul, li, img, article {
-  border: 1px solid rgba(250, 50, 50, 0.7);
-}
-
 .header { /* в этом селекторе установлены ограничения для секции */
   height: 100vh;
   min-height: 600px;
