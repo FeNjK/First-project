@@ -155,12 +155,80 @@ body, header, footer, section, nav, div, h1, h2, h3, p, a, link, ul, li, img, ar
   font-weight: bold;
 }
 
-.techniques {
+.techniques {/* начало секции "techniques" */
+  width: 80%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 0;
+  margin: 0 auto;
+}
+
+.section-title {
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.section-subtitle {
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cards {
+  width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 0;
+  list-style: none;
+}
+
+.cards__items {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+.cards__items:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.cards__image {
+  height: 160px;
+  width: 160px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin: 60px 40px 43px;
+}
+
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 16px auto 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: center;
 }
 
 .digits { /* начало секции "digits" */
@@ -194,8 +262,8 @@ body, header, footer, section, nav, div, h1, h2, h3, p, a, link, ul, li, img, ar
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding-left: 0;
 }
 
