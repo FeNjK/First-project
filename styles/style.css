@@ -9,6 +9,19 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+body, header, footer, section, nav, div, h1, h2, h3, p, a, link, ul, li, img, article {
+  border: 1px solid rgba(250, 50, 50, 0.7);
+}
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
 .header { /* в этом селекторе установлены ограничения для секции */
   height: 100vh;
   min-height: 600px;
@@ -58,6 +71,12 @@
   color: #2f80ed;
 }
 
+.page__links:hover {/* для микса*/
+  opacity: 0.65;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
 .header__main-illustration {
   width: 765px;
   height: 608px;
@@ -77,6 +96,10 @@
   position: absolute;
   background-size: cover;
   z-index: 0;
+}
+
+.page__el-rotation {
+  animation: rotation 20s linear infinite;
 }
 
 .description { /* начало секции "description" */
@@ -130,6 +153,14 @@
 
 .two-columns__span-accent {
   font-weight: bold;
+}
+
+.techniques {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .digits { /* начало секции "digits" */
@@ -353,6 +384,7 @@
   margin-top: 0;
   margin-bottom: 16px;
   padding-left: 0;
+  
 }
 
 .footer__column-link {
