@@ -231,30 +231,41 @@ body, header, footer, section, nav, div, h1, h2, h3, p, a, link, ul, li, img, ar
   text-align: center;
 }
 
+.video { /* начало секции "video" */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
+
+.video__iframes {
+  display: flex;
+  
+  margin: 50px auto 0;
+
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+
+}
+
+.video__iframe:first-of-type {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+
+
 .digits { /* начало секции "digits" */
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-.section-title {
-  width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  text-align: center;
-  margin: 0 auto 20px;
-}
-
-.section-subtitle {
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  margin: 0 auto;
 }
 
 .table {
