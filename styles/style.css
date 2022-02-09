@@ -9,7 +9,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-body, header, footer, section, nav, div, h1, h2, h3, p, a, link, ul, li, img, article {
+body, header, footer, section, nav, div, h1, h2, h3, h4, p, a, link, ul, li, img, article {
   border: 1px solid rgba(250, 50, 50, 0.7);
 }
 
@@ -67,8 +67,11 @@ body, header, footer, section, nav, div, h1, h2, h3, p, a, link, ul, li, img, ar
 }
 
 .header__link {
-  text-decoration: none;
   color: #2f80ed;
+}
+
+.page__links {
+  text-decoration: none;
 }
 
 .page__links:hover {/* для микса*/
@@ -300,7 +303,6 @@ body, header, footer, section, nav, div, h1, h2, h3, p, a, link, ul, li, img, ar
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  text-decoration: none;
   position: absolute;
   z-index: 1;
   color: #2f80ed;
@@ -363,6 +365,78 @@ body, header, footer, section, nav, div, h1, h2, h3, p, a, link, ul, li, img, ar
   font-size: 18px;
   font-weight: normal;
   margin: 20px auto 0;
+}
+
+.khan { /* начало секции "khan" */
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 105px;
+}
+
+.khan__conteiner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__autor {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0 auto;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0 auto 50px;
+}
+
+.khan__quote {
+  width: 790px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 36px 0;
+}
+
+.khan__quote-autor {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto 10px;
+}
+
+.khan__quote-autor-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 auto 68px;
+}
+
+.khan__book-conteiner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 0;
+}
+
+.khan__book-pic {
+  height: 620px;
+  width: 608px;
+  margin-right: 48px;
+  padding: 0;
+}
+
+.khan__buy-link {
+  color: #2f80ed;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
 }
 
 .kaufman { /* начало секции "kaufman" */
