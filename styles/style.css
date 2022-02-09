@@ -236,77 +236,33 @@ body, header, footer, section, nav, div, h1, h2, h3, p, a, link, ul, li, img, ar
   justify-content: center;
   flex-direction: column;
   padding-top: 100px;
-  padding-bottom: 0px;
 }
 
 .video__iframes {
   display: flex;
-  
-  margin: 50px auto 0;
-
+  margin: 50px auto -50px;
+  z-index: 1;
 }
 
 .video__iframe {
-  width: 515px;
-  height: 316px;
-
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .video__iframe:first-of-type {
-  margin-right: 0;
-  margin-left: 0;
+  margin-right: 20px;
 }
 
-
-
-
-.digits { /* начало секции "digits" */
+.oakley { /* начало секции "oakley" */
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 160px;
+  background-color: #f2f2f2;
 }
 
-.table {
-  width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-left: 0;
-}
-
-.table__cell {
-  list-style: none;
-  width: 250px;
-  margin-right: 0;
-  margin-top: 60px;
-}
-
-.table__cell:first-of-type {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.table__cell:last-of-type {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.table__heading {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0 auto;
-}
-
-.table__text {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 20px auto 0;
+.two-columns__paragraph:only-of-type {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .feynman { /* начало секции "feynman" */
@@ -358,6 +314,55 @@ body, header, footer, section, nav, div, h1, h2, h3, p, a, link, ul, li, img, ar
   position: absolute;
   background-size: cover;
   z-index: 0;
+}
+
+.digits { /* начало секции "digits" */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.table {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.table__cell {
+  list-style: none;
+  width: 250px;
+  margin-right: 0;
+  margin-top: 60px;
+}
+
+.table__cell:first-of-type {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.table__cell:last-of-type {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px auto 0;
 }
 
 .kaufman { /* начало секции "kaufman" */
