@@ -101,6 +101,11 @@
   animation: rotation 20s linear infinite;
 }
 
+.content {
+  margin: 0;
+  padding: 0;
+}
+
 .description { /* начало секции "description" */
   display: flex;
   justify-content: center;
