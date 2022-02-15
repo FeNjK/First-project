@@ -3,5 +3,8 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0 0 36px 0;
+  margin: 0 0 36px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  display: inline-block;
 }

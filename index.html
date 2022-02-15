@@ -14,7 +14,7 @@
         <a href="#" class="header__link page__links">Узнать &rarr;</a>
       </p>
       <img class="header__main-illustration" src="./blocks/header/__main-illustration/header-image.png" alt="Опять двойка">
-      <div class="header__square-pic page__el-rotation"></div>
+      <div class="header__square-pic rotation"></div>
     </header>
     <main class="content">
       <section class="description">
@@ -74,15 +74,11 @@
         <div class="video__iframes">
           <iframe class="video__iframe" 
                   title="Запись выступления Джоша Кауфмана на тему Как чему-то научиться" 
-                  width="515" 
-                  height="316" 
                   src="https://www.youtube.com/embed/5MgBikgcWnY?controls=0&hl=ru&modestbranding=1&iv_load_policy=3"
                   allowfullscreen>
           </iframe>
           <iframe class="video__iframe" 
                   title="Запись выступления Тима Урбана на тему Как мыслит прокрастинатор" 
-                  width="515" 
-                  height="316" 
                   src="https://www.youtube.com/embed/arj7oStGLkU?controls=0&hl=ru&modestbranding=1&iv_load_policy=3"
                   allowfullscreen>
           </iframe>
@@ -149,16 +145,16 @@
         </ul>
       </section>
       <section class="khan">
-        <article class="khan__conteiner">
-          <h2 class="khan__autor">Салман Хан</h2>
-          <p class="khan__title">Весь мир — школа</p>
-          <h3 class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения 
+        <article class="khan__container">
+          <p class="khan__autor">Салман Хан</p>
+          <h2 class="khan__title">Весь мир — школа</h2>
+          <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения 
             миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, 
             кто занимается образованием — так учащиеся повсюду смогут получить 
-            навыки и знания, которые приносят успех в школе, карьере и жизни.</h3>
+            навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
           <h4 class="khan__quote-autor">Джордж Лукас</h4>
           <p class="khan__quote-autor-subline">Кинорежиссер, продюсер</p>
-          <div class="khan__book-conteiner">
+          <div class="khan__book-container">
             <img class="khan__book-pic" 
                  src="./blocks/content/khan/__book-pic/khan-book.jpg" 
                  alt="Книга Салмана Хана Весь мир - школа">
@@ -211,9 +207,9 @@
             <p class="table__text">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ul>
-        <div class="kaufman__triangle page__el-rotation"></div>
+        <div class="kaufman__triangle rotation"></div>
       </section>    
-      <nav class="resources">
+      <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
         <ul class="resources__logo-zone">
@@ -234,7 +230,7 @@
                     src="./blocks/content/resources/__logo/resources-polka.svg"
                     alt="Полка"></a></li>
         </ul>
-      </nav>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__columns">
@@ -256,13 +252,13 @@
           <h3 class="footer__column-heading">Соцсети</h3>
           <ul class="footer__column-links">
             <li><a href="#" class="footer__column-link page__links">
-              <img class="footer__social-icon" src="./blocks/footer/__social/facebook_color_white.svg"
+              <img class="footer__social-icon" src="./blocks/footer/__social-icon/facebook_color_white.svg"
               alt="Фэйсбук">Facebook</a></li>
             <li><a href="#" class="footer__column-link page__links">
-              <img class="footer__social-icon" src="./blocks/footer/__social/vk_color_white.svg"
+              <img class="footer__social-icon" src="./blocks/footer/__social-icon/vk_color_white.svg"
               alt="ВКонтакте">ВКонтакте</a></li>
             <li><a href="#" class="footer__column-link page__links">
-              <img class="footer__social-icon" src="./blocks/footer/__social/instagram_color_white.svg"
+              <img class="footer__social-icon" src="./blocks/footer/__social-icon/instagram_color_white.svg"
               alt="Инстаграм">Instagram</a></li>
           </ul>
         </nav>
