@@ -4,6 +4,10 @@
 https://user-images.githubusercontent.com/98194605/233212071-b1161b0f-a030-4e63-beec-81b64a3a7b7d.mp4
 
 
+https://user-images.githubusercontent.com/98194605/233213511-71f8ff29-4ded-4cb1-bc64-f4beb4dc8db3.mp4
+
+
+
 ## В процессе работы применялись различные приемы на базовом уровне. Вот некоторые из них
 
 ### 1. **_Флексбокс-вёрстка_**
