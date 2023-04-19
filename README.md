@@ -2,9 +2,13 @@
 
 https://user-images.githubusercontent.com/98194605/233185179-5f0d6402-7661-4501-ad48-eb00020863d5.mp4
 
-<video width="900" controls>
+https://user-images.githubusercontent.com/98194605/233186237-98908e63-1386-497c-83a7-a102fec769a1.mov
+
+
+
+<!-- <video width="900" controls>
   <source src="https://user-images.githubusercontent.com/98194605/233185179-5f0d6402-7661-4501-ad48-eb00020863d5.mp4" type="video/mp4">
-</video>
+</video> -->
 
 ## В процессе работы применялись различные приемы на базовом уровне. Вот некоторые из них
 
