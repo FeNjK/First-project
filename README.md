@@ -1,6 +1,10 @@
 # **_Данный лендинг является результатом проектной работы в Яндекс.Практикуме_**
 
-https://user-images.githubusercontent.com/98194605/233184015-6d15f0a0-e3fc-4761-aa85-fda72f13664b.mp4
+https://user-images.githubusercontent.com/98194605/233185179-5f0d6402-7661-4501-ad48-eb00020863d5.mp4
+
+<video width="900" controls>
+  <source src="https://user-images.githubusercontent.com/98194605/233185179-5f0d6402-7661-4501-ad48-eb00020863d5.mp4" type="video/mp4">
+</video>
 
 ## В процессе работы применялись различные приемы на базовом уровне. Вот некоторые из них
 
